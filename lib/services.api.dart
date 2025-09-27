@@ -6,7 +6,10 @@ class ApiClient {
   final String baseUrl;
   final String token;
 
-  const ApiClient({required this.baseUrl, required this.token});
+ const ApiClient({
+    this.baseUrl = 'https://bookish-robot-v6j67gq4g7j9cx5w7-8080.app.github.dev',
+    this.token = '',
+  });
 
   Map<String, String> get _headers => {
     'Content-Type': 'application/json',
